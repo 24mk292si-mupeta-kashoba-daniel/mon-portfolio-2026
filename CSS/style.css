@@ -35,21 +35,54 @@ header {
     align-items: center;
     padding: 2rem 3rem ; 
 }
-header a{
+header div a{
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     color: var(--voilet-doux);
 }
-nav ul{
-    display: flex;
+ul li{
     list-style: none;
-    gap: 25px;
+    margin: 15px;
 }
-nav a{
+ul {
+    display: flex;
+}
+ul li a {
     text-decoration: none;
     color: var(--gris-tres-fonce);
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 10px 0;
 }
+ul li a:hover{
+    color: var(--voilet-doux);
+}
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #6c63ff;
+    transition: width 0.3s ease;
+
+}
+ul li a:hover::after{
+    width: 100%;
+}
+a.active {
+    color: var(--voilet-doux);
+}
+
+a.active::after{
+    width: 100%;
+}
+
+ 
+
+
 
 
