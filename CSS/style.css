@@ -90,11 +90,12 @@ a.active::after{
 }
 
 .hero img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     border: 8px solid var(--voilet-doux);
+    margin: 10rem 2rem;
 }
 
 .hero h1{
@@ -126,6 +127,35 @@ a.active::after{
     background-color: var(--voilet-fonce);
     transform: translateY(-9px);
 }
+.apropos {
+    width: 800px;
+    margin: 6rem auto;
+    text-align: center;
+}
+section h2 {
+    color: var(--voilet-doux);
+    font-size: 2.6rem;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+section h2::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--voilet-doux);
+    margin: 1.2rem auto;
+    border-radius: 2px;
+
+}
+.apropos p {
+    margin-bottom: 2rem;
+    color: var(--gris-tres-fonce);
+    font-size: 1.3rem;
+}
+
+
  
 
 
