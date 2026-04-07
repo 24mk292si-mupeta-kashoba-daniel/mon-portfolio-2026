@@ -1,35 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mon portfolio</title>
-    <link rel="stylesheet" href="../MON PORTFOLIO/CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="css/style.css ">
+  <link rel="stylesheet" href="h">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div>
-            <a href="">Mon portfolio</a>
+  <header>
+    <div>
+      <a href="">Mon Portfolio</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html"class="active">Projets</a></li>
+        <li><a href="Passions.html">Passions</a></li>
+        <li><a href="Divertissement.html">Divertissement</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <section class="projets">
+    <h1>Mes Réalisations</h1>
+    <div class="line"></div>
+    <div class="cards">
+      
+      <div class="card">
+        <img src="image/1.jpeg" alt=""width="300">
+        <div class="content">
+          <h3>Site E-commerce</h3>
+          <p> Une boutique en ligne complète développée 
+            avec HTML, CSS, JavaScript pur.
+          </p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <div class="links">
+            <span>Code</span>
+            <span>Démo</span>
+          </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Acueille</a></li>
-                <li><a href="../MON PORTFOLIO/project.html"class="active">Projet</a></li>
-                <li><a href="../MON PORTFOLIO/passion.html">passions</a></li>
-                <li><a href="../MON PORTFOLIO/divertissement.html">divertissement</a></li>
-                <li><a href="../MON PORTFOLIO/contact.html">contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Voici mes projets</h1>
-    </main>
-    <footer>
-        <p>2026 Daniel.Tous droits réservés.</p>
+      </div>
+      
+      <div class="card">
+        <img src="image/2.jpeg" alt=""width="300">
+        <div class="content">
+          <h3>Gestionnaire de Tâches</h3>
+          <p>Application web pour organiser ses projets
+            quotidients avec stockage local.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Flask</span>
+          </div>
+          <div class="links">
+            <span>Code</span>
+            <span>Démo</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img src="image/3.jpeg" alt=""width="300">
+        <div class="content">
+          <h3>Blog Personnel</h3>
+          <p>projet en cours de migration vers Laravel
+            pour apprendre le backend.
+          </p>
+          <div class="tags">
+            <span>PHP</span>
+            <span>Laravel</span>
+           </div>
+           <div class="links">
+            <span>Code</span>
+            <span>Bientôt</span>
+           </div>
+        </div>
+      </div>
+   <div class="card">
+    <img src="image/4.jpeg" alt=""width="300">
+    <div class="content">
+      <h3>Deshboard d'Analyse</h3>
+      <p>
+        visualisation de données dynamique avec
+        Python et la bibliothèque Matplotlib.
+      </p>
+      <div class="tags">
+        <span>Python</span>
+        <span>Data</span>
+      </div>
+      <div class="links">
+        <span>Code</span>
+        <span>Démo</span>
+      </div>
+    </div>
+   </div>
+   <div class="card">
+    <img src="image/5.jpeg" alt=""width="300">
+    <div class="content">
+      <h3>Application Méteo</h3>
+      <p>
+        Une Application utlisant une API en temps
+        réel pour la méteo mondiale.
+      </p>
+      <div class="tags">
+        <span>JavaScript</span>
+        <span>API</span>
+      </div>
+      <div class="links">
+        <span >Code</span>
+        <span >Démo</span>
+      </div>
+    </div>
+   </div>
+   <div class="card">
+    <img src="image/6.jpeg" alt=""width="300">
+    <div class="content">
+      <h3>Maquette Mobile UI</h3>
+      <p>
+        Conception d'une interface utilisateur 
+        moderne pour une appliaction de fitness
+      </p>
+      <div class="tags">
+        <span>Figma</span>
+        <span>Design</span>
+      </div>
+      <div class="links">
+        <span>Figma</span>
+        <span>Aperçu</span>
+      </div>
+    </div>
+   </div>
+  </section>
+  </main>
+  <footer>
+    <p>2026 Daniel.Tous droits réservés. <br></p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <nav>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
             <a href=""><i class="fa-brands fa-github"></i></a>
