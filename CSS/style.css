@@ -385,6 +385,210 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+/* --- Styles pour la page Passions --- */
 
+.passions {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.passions-header {
+    margin-bottom: 50px;
+}
+
+/* J'utilise la couleur violet-fonce de ta charte */
+.passions-header h1 {
+    color: var(--voilet-fonce);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.passions-header .line {
+    width: 80px;
+    height: 4px;
+    background-color: var(--voilet-fonce);
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.passions-header p {
+    color: var(--gris-fonce);
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Grille pour les cartes */
+.passions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Style des cartes de passion (style hérité de tes cartes de projet) */
+.passion-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* Effet au survol */
+.passion-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des cartes de passion corrigé */
+.passion-card {
+    background: #fff;
+    border-radius: 15px;
+    /* LE CORRECTIF EST ICI : overflow hidden force l'image à suivre l'arrondi de la carte */
+    overflow: hidden; 
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style de l'image de passion corrigé */
+.passion-card img {
+    width: 100%;
+    height: 400px;      /* Hauteur fixe pour que toutes les cartes soient alignées */
+    object-fit: cover;  /* Empêche l'image d'être écrasée ou coupée bizarrement */
+    object-position: center;
+    display: block;     /* Supprime l'espace vide sous l'image */
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 6px solid var(--voilet-doux);
+}
+
+.passion-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.passion-content h3 {
+    color: var(--voilet-fonce);
+    font-size: 1.6rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Couleur de l'icône de titre */
+.passion-content h3 i {
+    color: var(--voilet-doux);
+}
+
+.passion-content p {
+    color: var(--gris-tres-fonce);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+/* Les tags héritent de ton style existant pour .tags span */
+/* Mais j'ai ajouté un petit effet de survol pour le fun */
+.passion-content .tags span:hover {
+    background-color: var(--gris-clair);
+    transform: scale(1.05);
+}
+
+/* --- Adaptation mobile pour les passions --- */
+@media (max-width: 768px) {
+    .passions-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .passions-grid {
+        gap: 20px;
+    }
+    
+    .passion-content {
+        padding: 20px;
+    }
+}
+/* --- Styles spécifiques à la page Divertissement --- */
+
+.divertissement-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+/* --- CODE CORRECTIF POUR TES IMAGES (À REMPLACER) --- */
+
+.card img {
+    width: 100%;             /* Force l'image à prendre TOUTE la largeur de la carte */
+    height: 400px;            /* Définit une HAUTEUR FIXE POUR TOUTES LES IMAGES. Tu peux changer 220px par 200px si tu préfères. */
+    object-fit: cover;        /* CONSEIL DE L'IA : C'EST LA CLÉ ! L'image remplit l'espace sans se déformer, le surplus est coupé proprement. */
+    object-position: center;   /* Centre l'image pour que la partie importante reste visible */
+    border-bottom: 7px solid var(--voilet-fonce); /* Conserve ta bordure violette */
+    display: block;           /* Enlève les petits espaces indésirables sous l'image */
+}
+
+/* On utilise la classe card existante mais on ajoute une spécificité */
+.entertainment-card {
+    position: relative;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Petit badge stylé en haut de la carte */
+.entertainment-card .badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--voilet-doux);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Animation spéciale pour les icônes dans les liens */
+.entertainment-card .links span {
+    color: var(--voilet-fonce);
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.entertainment-card .links i {
+    color: var(--orage-vif); /* Utilise ton orange vif pour les icônes */
+}
+
+/* Effet miroir sur l'image au survol */
+.entertainment-card:hover img {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+}
+
+.entertainment-card img {
+    transition: transform 0.5s ease;
+}
+
+/* Espacement du footer pour cette page */
+.divertissement-section {
+    margin-bottom: 100px;
+}
 
 
